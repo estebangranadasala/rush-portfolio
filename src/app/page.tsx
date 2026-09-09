@@ -47,8 +47,10 @@ const YouTubePlayer = ({ src, poster }: { src: string, poster?: string }) => {
     );
   }
 
-  // Ensure autoplay is true when activated by click
-  const embedUrl = src.includes('?') ? `${src}&autoplay=1` : `${src}?autoplay=1`;
+  // Only force autoplay if the user explicitly clicked the custom poster
+  const embedUrl = (isPlaying && poster) 
+    ? (src.includes('?') ? `${src}&autoplay=1` : `${src}?autoplay=1`) 
+    : src;
 
   return (
     <iframe 
