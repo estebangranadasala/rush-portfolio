@@ -103,7 +103,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-xl md:text-2xl font-light text-gray-300 max-w-2xl tracking-wide mb-10"
           >
-            Capturando la esencia del movimiento y la luz. Producción de video y fotografía de alto nivel.
+            Grabación de video, creación de contenido, edición profesional y campañas para e-commerce.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
